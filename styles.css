@@ -1,0 +1,182 @@
+html, body {
+    font-family: 'Playfair Display', serif;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 80rem;
+    background-color: lightcyan;
+}
+
+/* header */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 70rem;
+    margin: 0 auto;
+    display: block;
+}
+
+/* records */
+
+.records {
+    padding: .5rem 1.5rem;
+    background-color: cyan;
+    margin: 1rem auto;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.records:hover {
+    background-color: lightcyan;
+}
+
+/* footer */
+
+footer {
+    background-color: paleturquoise;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    padding: .2rem;
+}
+
+.creator{
+    text-decoration: none;
+    color: deepskyblue;
+}
+.creator:hover {
+    color: lightskyblue;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.connect {
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: .2rem;
+}
+
+.git {
+    background-color: dimgray;
+    color: white;
+}
+.git:hover {
+    background-color: gray;
+}
+
+.insta {
+    background-color: orchid;
+    color: white;
+}
+.insta:hover {
+    background-color: mediumorchid;
+}
+
+.x {
+    background-color: deepskyblue;
+    color: white;   
+}
+.x:hover {
+    background-color: dodgerblue;
+}
+
+.linked {
+    background-color: dodgerblue;
+    color: white;
+}
+.linked:hover {
+    background-color: royalblue;
+}
+
+.face {
+    background-color: royalblue;
+    color: white;
+}
+.face:hover {
+    background-color: cornflowerblue;
+}
+
+/* modal */
+
+.modal {
+    background-color: #212529;
+    color: whitesmoke;
+    border-radius: 1rem;
+    width: 50rem;
+    height: 30rem;
+    padding: 4rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    box-shadow: .5rem -.5rem .5rem grey;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.close-modal-btn-container {
+    text-align: right;
+    margin: .5rem;
+}
+
+.modal-close-btn {
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: .2rem solid transparent;
+    color: whitesmoke;
+}
+
+.modal-close-btn:hover, .modal-close-btn:active {
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.modal-close-btn:disabled {
+    color: whitesmoke;
+    opacity: .2;
+    cursor: not-allowed;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 450px) {
+    h1 {
+        font-size: 3rem;
+    }   
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 4rem;
+    }   
+
+    h3 {
+        font-size: 2rem;
+    }
+}
