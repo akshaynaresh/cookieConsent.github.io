@@ -3,7 +3,6 @@ html, body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    width: 80rem;
     background-color: lightcyan;
 }
 
@@ -21,7 +20,7 @@ h3 {
 }
 
 img {
-    width: 70rem;
+    width: 70%;
     margin: 0 auto;
     display: block;
 }
@@ -119,19 +118,19 @@ footer p {
 .modal {
     background-color: #212529;
     color: whitesmoke;
-    border-radius: 1rem;
-    width: 50rem;
-    height: 30rem;
-    padding: 4rem;
-    font-size: 1.5rem;
+    border-radius: .5rem;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    font-size: .8rem;
     font-weight: 300;
     box-shadow: .5rem -.5rem .5rem grey;
-    margin: auto;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    margin: auto;
     display: none;
 }
 
@@ -141,7 +140,7 @@ footer p {
 }
 
 .modal-close-btn {
-    font-size: 2rem;
+    font-size: .8rem;
     font-weight: 700;
     background-color: transparent;
     border: .2rem solid transparent;
@@ -159,6 +158,53 @@ footer p {
     cursor: not-allowed;
 }
 
+input {
+    padding: .5rem;
+    font-size: .8rem;
+    font-weight: 500;
+    font-family: 'playfair display', sans-serif;
+    box-shadow: .5rem -.5rem 1rem grey;
+    margin: .3rem;
+    border-radius: .3rem;
+}
+
+.modal-btn {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'playfair display', sans-serif;
+    cursor: pointer;
+}
+
+.modal-choice-btns {
+    display: flex;
+    justify-content: center;
+    gap: .2rem;
+    margin-top: 1.3rem;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.loading {
+    width: 40%;
+}
+
+/* .uploading {
+    margin-top: 0;
+} */
+
+.modal-inner-loading {
+    color: red;
+}
+
+.modal-display-name {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: fuchsia;
+}
+
 /* media queries */
 
 @media only screen and (min-width: 450px) {
@@ -169,6 +215,31 @@ footer p {
     h3 {
         font-size: 1.5rem;
     }
+
+    .modal {
+        width: 28rem;
+        height: 28rem;
+        font-size: 1.1rem;
+        padding: 2rem;
+    }
+
+    .modal-close-btn {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1.1rem;
+        padding: .8rem;
+    }
+
+    .modal-btn {
+        padding: .6rem 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .modal-display-name {
+        font-size: 2.2rem;
+    }
 }
 
 @media only screen and (min-width: 700px) {
@@ -178,5 +249,30 @@ footer p {
 
     h3 {
         font-size: 2rem;
+    }
+
+    .modal {
+        width: 35rem;
+        height: 35rem;
+        font-size: 1.5rem;
+        padding: 3rem;
+    }
+
+    .modal-close-btn {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .modal-btn {
+        padding: .8rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .modal-display-name {
+        font-size: 3rem;
     }
 }
